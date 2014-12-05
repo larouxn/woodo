@@ -10,7 +10,7 @@ puts "Press RETURN to install woodo, CTRL+C to cancel"
 $stdin.gets
 
 # Move woodo.sh to a hidden file in user's home directory
-`mv woodo ~/.woodo`
+`cp woodo ~/.woodo.sh`
 
 # Open bash file, specified by user and append aliases
 bash_file = File.open(File.expand_path(location), 'a')
